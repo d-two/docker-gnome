@@ -86,10 +86,10 @@ RUN apt-get update && \
     /cleanup
 
 # Gnome Shell extensions
-RUN apt-get update && \
-    env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-      gnome-shell-extension* && \
-    /cleanup
+#RUN apt-get update && \
+#    env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+#      gnome-shell-extension* && \
+#    /cleanup
 
 # Workaround to get gnome-session running. 
 # gnome-session fails if started directly. Running gnome-shell only works, but lacks configuration support.
